@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Category.css"
 
-const Category = ({category}) => {
+const Category = ({category:{picture, name}}) => {
     return (
         <div className="category">
-            <img src={category.picture}/>
-            <div>{category.name}</div>
+            <img src={picture}/>
+            <div>{name}</div>
         </div>
     );
 };

@@ -8,10 +8,10 @@ const DEFAULT_PIC = "https://m4-shop.com/upload/iblock/6e7/no_photo_medium.png";
 function App() {
     const [products, setProducts] = useState(
         [
-            {id: 1, picture: DEFAULT_PIC, name: "Чайник", grade: "5", price: "1000"},
-            {id: 2, picture: DEFAULT_PIC, name: "Чайник2", grade: "5", price: "1000"},
-            {id: 3, picture: DEFAULT_PIC, name: "Чайник3", grade: "5", price: "1000"},
-            {id: 4, picture: DEFAULT_PIC, name: "Чайник4", grade: "5", price: "1000"}
+            {id: 1, picture: DEFAULT_PIC, name: "Чайник", grade: "5", price: "1000", saleBtn: "Купить", sales: 0, favoriteBtn: "В избранное"},
+            {id: 2, picture: DEFAULT_PIC, name: "Чайник2", price: "1000", saleBtn: "Купить", sales: 0, favoriteBtn: "В избранное"},
+            {id: 3, picture: DEFAULT_PIC, name: "Чайник3", price: "1000", saleBtn: "Купить", sales: 0, favoriteBtn: "В избранное"},
+            {id: 4, picture: DEFAULT_PIC, name: "Чайник4", price: "1000", saleBtn: "Купить", sales: 0, favoriteBtn: "В избранное"}
         ]
     )
 
@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="app">
         <Header/>
-        <Content products={products} categories={categories}/>
+        <Content products={products} categories={categories} discountTitle={"Акции"} topTitle={"Популярные категории товаров"}/>
     </div>
   );
 }

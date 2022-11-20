@@ -2,10 +2,10 @@ import React from 'react';
 import Category from "../Category/Category";
 import "./TopCategories.css"
 
-const TopCategories = ({categories}) => {
+const TopCategories = ({categories, title}) => {
     return (
         <div className="top">
-            <h1>Популярные категории товаров</h1>
+            <h1>{title}</h1>
             <div className="categories">
                 {categories.map((category) => <Category category={category} key={category.id}/>)}
             </div>

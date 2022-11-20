@@ -2,10 +2,10 @@ import React, {useState} from "react";
 import "./Discount.css";
 import Product from "../Product/Product";
 
-const Discount = ({products}) => {
+const Discount = ({products, title}) => {
     return(
         <div className="discount">
-            <h1>Акции</h1>
+            <h1>{title}</h1>
             <div className="products">
                 {products.map((product) => <Product product={product} key={product.id}/>)}
             </div>
