@@ -1,0 +1,29 @@
+.header {
+    display: grid;
+    grid-template-areas:
+                "logo catalog search login likes cart";
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.catalog {
+    grid-area: catalog;
+}
+
+.search {
+    grid-area: search;
+}
+
+.lohin {
+    grid-area: login;
+}
+
+.likes {
+    grid-area: likes;
+}
+
+.cart {
+    grid-area: cart;
+}
